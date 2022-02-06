@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+   <LinearLayout
+    android:id="@+id/kkk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rivserachid"
+        android:src="@drawable/slider_img"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_gravity="center_horizontal" />
+
+   </LinearLayout>
+
+
+<LinearLayout
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cafe Coffee Day"
+            android:textStyle="bold"
+            android:textColor="@color/inputColor"
+            android:textSize="@dimen/_10sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="$125"
+            android:gravity="right"
+            android:textColor="@color/inputColor"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:layout_weight="0.01"
+            android:id="@+id/rbHomeId"
+            android:progressTint="@color/yellow_clr"
+            android:scaleX="1"
+            android:numStars="5"
+            android:scaleY="1"
+            android:secondaryProgressTint="@color/yellow_clr"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_weight="0.99"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4.8 (20 Reviews)"
+            android:textColor="@color/inputColor"
+            android:textSize="@dimen/_8sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8sdp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kkk"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="5sp"
+            android:gravity="left"
+            android:text="Open"
+            android:textColor="@color/green_clr"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="0.3"
+            android:drawablePadding="@dimen/_3sdp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kkk"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="5sp"
+            android:gravity="left"
+            android:text="2 KM"
+            android:drawableLeft="@drawable/ic_time"
+            android:textColor="@color/inputColor"
+            android:textSize="@dimen/_8sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_send"
+            android:layout_weight="0.5"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_22sdp"
+            android:background="@drawable/button_shape"
+            android:text="View more"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_8sdp" />
+    </LinearLayout>
+
+</LinearLayout>
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

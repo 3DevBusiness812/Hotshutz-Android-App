@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/ll_chatID"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight=".20"
+            android:layout_width="0dp"
+            android:gravity="top"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/circle_button_shape"
+                android:textSize="@dimen/_15sdp"
+                android:text="J"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp">
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight=".80"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/id_username"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Alina Finiti"
+                    android:layout_weight="0.70"
+                    android:textColor="@color/inputColor"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:textSize="@dimen/_8sdp"
+                    android:text="03:45 PM"
+                    android:gravity="right"
+                    android:layout_weight="0.30"
+                    android:textColor="@color/colorGray"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/iv_useremail"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Hey, Whats ur plan today ?"
+                android:textColor="@color/inputColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_13sdp"
+        android:background="@color/lightcolorGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </View>
+
+</LinearLayout>
+
+
+
+

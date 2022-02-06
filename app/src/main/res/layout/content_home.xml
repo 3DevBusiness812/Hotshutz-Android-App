@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/app_bar"
+    tools:showIn="@layout/app_bar_home">
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_45sdp"
+            android:id="@+id/nav_host_fragment"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/llHomeBottoNavId"
+            android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/llHomeBottoNavId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:id="@+id/rlHomeId"
+            android:layout_width="0sp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5sp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivHomeId"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:padding="3sp"
+                android:src="@drawable/ic_category" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHomeId"
+                android:layout_below="@+id/ivHomeId"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Categories"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textColor="@color/inputColor" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:id="@+id/rlHomeofferdId"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5sp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivOfferId"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:padding="3sp"
+                android:src="@drawable/ic_home" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvOfferId"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivOfferId"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Home"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/inputColor" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:id="@+id/rlHomeSearchId"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5sp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSearchId"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:padding="3sp"
+                android:src="@drawable/ic_shopping_bag" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvsearchId"
+                android:layout_below="@+id/ivSearchId"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="My Orders"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/inputColor" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:id="@+id/rlHomeAccountId"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1sp"
+            android:layout_marginRight="1sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5sp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAccountId"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:padding="3sp"
+                android:src="@drawable/ic_person" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAccountid"
+                android:layout_below="@+id/ivAccountId"
+                android:layout_centerHorizontal="true"
+                android:text="My profile"
+                android:textStyle="bold"
+                android:textColor="@color/inputColor"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="red_clr">#D01A1F</color>
+    <color name="yellow_clr">#E8C204</color>
+    <color name="inputColor">#383f49</color>
+    <color name="colorGray">#8c8b8b</color>
+    <color name="lightcolorGray">#278C8B8B</color>
+<!--    <color name="yellow_clr">#F0C904</color>-->
+    <color name="edit_profile">#454f63</color>
+    <color name="green_clr">#18c052</color>
+    <color name="edit_update">#18c052</color>
+</resources>

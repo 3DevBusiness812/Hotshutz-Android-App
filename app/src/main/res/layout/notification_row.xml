@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/ll_chatID"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight=".18"
+            android:layout_width="0dp"
+            android:gravity="top"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@drawable/ic_notification_img"
+                android:textSize="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_weight=".80"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/id_username"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Order Update"
+                    android:layout_weight="0.70"
+                    android:textColor="@color/inputColor"
+                    android:layout_width="0sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:textSize="@dimen/_8sdp"
+                    android:text="4 min ago"
+                    android:gravity="right"
+                    android:layout_weight="0.30"
+                    android:textColor="@color/yellow_clr"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/iv_useremail"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Your order No #21233 is 30% grow successfully, May Be Delivered on 23-6-2020"
+                android:textColor="@color/colorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="@dimen/_14sdp"
+        android:background="@color/lightcolorGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </View>
+
+</LinearLayout>
+
+
+

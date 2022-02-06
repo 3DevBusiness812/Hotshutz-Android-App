@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdp"
+            android:background="@color/lightcolorGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="0.85"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:text="Delivering At"
+                android:drawablePadding="@dimen/_6sdp"
+                android:textColor="@color/inputColor"
+                android:drawableLeft="@drawable/ic_location"
+                android:layout_height="wrap_content">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:text="- Lorum lpsum is lorum"
+                android:textSize="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.15"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Edit"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:textColor="@color/inputColor"
+                    android:drawableLeft="@drawable/ic_edit"
+                    android:layout_height="wrap_content">
+                </androidx.appcompat.widget.AppCompatTextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Browse By Categories"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_allcat"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:rotation="180"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:textColor="@color/inputColor"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cat_pkg"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+       <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpHomeFirstBannerId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/tlHomeFirstBannerId"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="120sp"
+            android:layout_marginRight="120sp"
+            android:layout_marginBottom="1sp"
+            app:tabBackground="@drawable/tab_big_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabPaddingEnd="7dp"
+            app:tabPaddingStart="7dp"
+            app:tabTextColor="@android:color/transparent" />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Products"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_seeall_product"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="See All"
+                    android:textColor="@color/yellow_clr"
+                    android:textSize="@dimen/_11sdp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_product"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Our Top Vender"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="See All"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:textColor="@color/yellow_clr"
+                    android:textSize="@dimen/_11sdp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_ourtop_vendor"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+

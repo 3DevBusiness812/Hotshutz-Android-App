@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:padding="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivNavId"
+            android:layout_weight="0.08"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user_img"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1sp" />
+
+        <LinearLayout
+            android:layout_weight="0.82"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kamiloo Jon"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/red_clr" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/useremail"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:text="KamilooJon@gmail.com"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/iv_editprofile"
+            android:background="@drawable/circle_outline_green_shape"
+            android:layout_weight="0.05"
+            android:text="Edit"
+            android:gravity="center"
+            android:textSize="@dimen/_8sdp"
+            android:padding="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+         />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/_15sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="0.03"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_recipient_details"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1sp" />
+
+        <LinearLayout
+            android:layout_weight="0.87"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recipient Details"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/inputColor" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_weight="0.05"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_arrow_black_profile"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@color/lightcolorGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </View>
+
+
+    <LinearLayout
+        android:id="@+id/ll_editaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/_15sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="0.03"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_delivery_details"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1sp" />
+
+        <LinearLayout
+            android:layout_weight="0.87"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Details"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/inputColor" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_weight="0.05"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_arrow_black_profile"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@color/lightcolorGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </View>
+
+    <LinearLayout
+        android:id="@+id/ll_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/_15sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="0.03"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_my_inbox"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1sp" />
+
+        <LinearLayout
+            android:layout_weight="0.87"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Inbox"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/inputColor" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_weight="0.05"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_arrow_black_profile"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@color/lightcolorGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingLeft="@dimen/_15sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="0.03"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_logout"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1sp" />
+
+        <LinearLayout
+            android:layout_weight="0.87"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/inputColor" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_weight="0.05"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_arrow_black_profile"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1sp" />
+
+    </LinearLayout>
+</LinearLayout>

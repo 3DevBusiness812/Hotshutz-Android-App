@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_noti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:textColor="@color/inputColor"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:text="Change profile photo"-->
+<!--                android:layout_height="wrap_content">-->
+<!--            </androidx.appcompat.widget.AppCompatTextView>-->
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                 <androidx.cardview.widget.CardView
+                     android:layout_marginTop="@dimen/_15sdp"
+                     android:layout_marginLeft="@dimen/_15sdp"
+                     android:layout_marginRight="@dimen/_15sdp"
+                     android:layout_width="match_parent"
+                     android:background="@color/white"
+                     app:cardBackgroundColor="@color/white"
+                     app:cardCornerRadius="@dimen/_5sdp"
+                     android:layout_height="@dimen/_42sdp">
+
+                     <LinearLayout
+                         android:background="@drawable/border_et_shape"
+                         android:weightSum="2"
+                         android:orientation="horizontal"
+                         android:padding="@dimen/_5sdp"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/_42sdp">
+
+                         <com.google.android.material.textfield.TextInputEditText
+                             android:layout_weight="2"
+                             android:id="@+id/tv_FnameProfile_id"
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:hint="City"
+                             android:inputType="text"
+                             android:layout_gravity="center"
+                             android:layout_marginStart="@dimen/_12sdp"
+                             android:background="@android:color/transparent"
+                             android:singleLine="true"
+                             android:textColor="@color/inputColor"
+                             android:textColorHint="@color/colorGray"
+                             android:textSize="@dimen/_12sdp" />
+                     </LinearLayout>
+                 </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:layout_height="@dimen/_42sdp">
+
+                    <LinearLayout
+                        android:background="@drawable/border_et_shape"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_42sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Sub Area"
+                            android:inputType="text"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:background="@android:color/transparent"
+                            android:singleLine="true"
+                            android:textColor="@color/inputColor"
+                            android:textColorHint="@color/colorGray"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:layout_height="@dimen/_42sdp">
+
+                    <LinearLayout
+                        android:background="@drawable/border_et_shape"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_42sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Delivery Area"
+                            android:inputType="text"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:background="@android:color/transparent"
+                            android:singleLine="true"
+                            android:textColor="@color/inputColor"
+                            android:textColorHint="@color/colorGray"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:layout_height="@dimen/_42sdp">
+
+                    <LinearLayout
+                        android:background="@drawable/border_et_shape"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_42sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Pincode"
+                            android:inputType="text"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:background="@android:color/transparent"
+                            android:singleLine="true"
+                            android:textColor="@color/inputColor"
+                            android:textColorHint="@color/colorGray"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_post"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/button_shape"
+                    android:text="Save &amp; Exit"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textFontWeight="600"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@color/lightcolorGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingLeft="@dimen/_15sdp">
+
+
+                <LinearLayout
+                    android:layout_weight="0.87"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add New Address"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/inputColor" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_weight="0.05"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_arrow_black_profile"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

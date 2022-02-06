@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_frnduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="100sp"
+        android:layout_marginRight="100sp"
+        android:layout_marginStart="10sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivchatprofileId"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="3dp"
+            android:src="@drawable/user_img" />
+
+
+        <LinearLayout
+            android:paddingLeft="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivchatprofileId"
+            android:layout_toEndOf="@+id/ivchatprofileId">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="10:22 am"
+                android:textColor="@color/inputColor"
+                android:textSize="@dimen/_8sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSenderChatId"
+                android:background="@drawable/chat_button_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10sp"
+                android:padding="@dimen/_10sdp"
+                android:text="Hey, Whats ur plan today ?"
+                android:textColor="@color/inputColor"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="80sp">
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:id="@+id/rl_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="10:22 am"
+                android:layout_gravity="right"
+                android:textColor="@color/inputColor"
+                android:textSize="@dimen/_8sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUserChatId"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/chat_button_shape_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5sp"
+                android:padding="@dimen/_10sdp"
+                android:text="Hey, Whats ur plan today ?"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                android:layout_marginStart="5sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="3dp"
+                android:layout_gravity="right"
+                android:src="@drawable/user_img" />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

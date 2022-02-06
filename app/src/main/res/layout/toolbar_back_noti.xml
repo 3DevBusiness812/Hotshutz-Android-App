@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/id_toolbar"
+        android:weightSum="1"
+        android:background="@color/red_clr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/id_back"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_arrow_white_toolbar"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:layout_weight=".12"
+            android:layout_height="match_parent"></androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_tittle"
+            android:layout_weight=".55"
+            android:layout_width="0dp"
+            android:textSize="@dimen/_13sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Food"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:layout_height="match_parent">
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <LinearLayout
+            android:layout_weight="0.32"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rl_search"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/ic_search_white" />
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_notification"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/ic_notification" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_cat"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+              <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/ic_shopping_cart" />
+
+                    <RelativeLayout
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:id="@+id/rlCartBackHomeId"
+                        android:layout_width="@dimen/_8sdp"
+                        android:layout_height="@dimen/_8sdp"
+                        android:background="@drawable/ic_circle">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/ivCartHomeId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8sdp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </RelativeLayout>

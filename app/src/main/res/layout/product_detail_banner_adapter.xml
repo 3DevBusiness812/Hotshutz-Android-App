@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSlideId"
+            android:padding="@dimen/_20sdp"
+            android:src="@drawable/myorder_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            />
+
+
+<!--        <TextView-->
+<!--            android:textAllCaps="true"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/colorwhite"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:paddingLeft="@dimen/_10sdp"-->
+<!--            android:paddingRight="@dimen/_10sdp"-->
+<!--            android:paddingTop="@dimen/_7sdp"-->
+<!--            android:paddingBottom="@dimen/_7sdp"-->
+<!--            android:layout_gravity="bottom|right"-->
+<!--            android:text="20% off"-->
+<!--            android:background="@drawable/green_offer_tag"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        </TextView>-->
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

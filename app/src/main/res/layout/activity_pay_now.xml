@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_noti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                 <androidx.cardview.widget.CardView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_height="@dimen/_42sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:paddingLeft="@dimen/_15sdp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight="0.03"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_radio_button_unchecked"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1sp" />
+
+                    <LinearLayout
+                        android:layout_weight="0.87"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Apply Pay"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/inputColor" />
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_weight="0.05"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/pay_apple"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:layout_height="@dimen/_42sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:paddingLeft="@dimen/_15sdp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="0.03"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_radio_button_unchecked"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="1sp" />
+
+                        <LinearLayout
+                            android:layout_weight="0.87"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Credit Card"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/inputColor" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_weight="0.05"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/pay_creditcard"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="1sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:layout_height="@dimen/_42sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:paddingLeft="@dimen/_15sdp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_weight="0.03"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_radio_button_unchecked"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="1sp" />
+
+                        <LinearLayout
+                            android:layout_weight="0.87"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Account"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/inputColor" />
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_weight="0.05"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/pay_acc_balance"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="1sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_post"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/button_shape"
+                    android:text="Pay Now"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textFontWeight="600"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

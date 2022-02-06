@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back_noti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/toolbar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:background="@drawable/circle_outline_green_shape"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_6sdp"
+        android:weightSum="2">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="filters"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/inputColor"
+            android:textSize="@dimen/_10sdp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/lightcolorGray"
+        android:layout_width="1dp"
+        android:layout_height="match_parent">
+    </View>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:background="@drawable/circle_outline_green_shape"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_6sdp"
+        android:weightSum="1">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_productname"
+            android:layout_width="0dp"
+            android:layout_weight=".75"
+            android:layout_height="wrap_content"
+            android:text="Sort by"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/inputColor"
+            android:textSize="@dimen/_10sdp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight=".25"
+            android:background="@drawable/ic_arrow_down_black" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+            <View
+                android:background="@color/lightcolorGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:id="@+id/id_rv_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_data_not_id"
+        android:textSize="@dimen/_14sdp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:text="Data Not Available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+

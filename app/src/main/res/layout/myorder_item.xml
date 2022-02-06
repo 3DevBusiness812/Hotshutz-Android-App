@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="3sp">
+
+    <LinearLayout
+        android:id="@+id/rivSweetCatRowId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/myorder_img"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kkk"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="5sp"
+                    android:gravity="left"
+                    android:text="Tata sampann"
+                    android:textColor="@color/inputColor"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:text="3 PCS"
+                    android:gravity="left"
+                    android:textColor="@color/inputColor"
+                    android:textSize="@dimen/_9sdp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:text="$ 188"
+                    android:gravity="left"
+                    android:textColor="@color/inputColor"
+                    android:textSize="@dimen/_11sdp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="0.8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvserachProductDesId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginEnd="5sp"
+                    android:text="12 March 2020"
+                    android:gravity="right"
+                    android:textColor="@color/inputColor"
+                    android:textSize="@dimen/_7sdp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_viewdetail"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/button_shape"
+                    android:text="view details"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_8sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+   <LinearLayout
+       android:layout_weight="0.8"
+    android:id="@+id/kkk"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rivserachid"
+        android:src="@drawable/myorder_img"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_gravity="center_horizontal" />
+
+   </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:layout_weight="1.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kkk"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="5sp"
+                    android:gravity="left"
+                    android:text="Tata sampann"
+                    android:textColor="@color/inputColor"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:text="3 PCS"
+                    android:gravity="left"
+                    android:textColor="@color/inputColor"
+                    android:textSize="@dimen/_9sdp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:text="$ 188"
+                    android:gravity="left"
+                    android:textColor="@color/inputColor"
+                    android:textSize="@dimen/_11sdp"
+                    />
+            </LinearLayout>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_weight="0.8"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvserachProductDesId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="5sp"
+        android:text="12 March 2020"
+        android:gravity="right"
+        android:textColor="@color/inputColor"
+        android:textSize="@dimen/_8sdp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_viewdetail"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/button_shape"
+        android:text="view details"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_8sdp" />
+</LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notification_black"
+            android:title="Notification" />
+    </group>
+
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_shopping_bag"
+            android:title="Order History" />
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_paymenthistory"
+            android:icon="@drawable/ic_payment"
+            android:title="Payment History" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/nav_myinbox"
+            android:icon="@drawable/ic_drawer_inbox"
+            android:title="My Inbox" />
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group5">
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group6">
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_share"
+            android:title="Share with Friend" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group11">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_drawer_logout"
+            android:title="Logout" />
+    </group>
+
+<!--    <group android:checkableBehavior="single"-->
+<!--        android:id="@+id/group12">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_termsandConditons"-->
+<!--            android:icon="@drawable/ic_drawer_term"-->
+<!--            android:title="@string/terms_and_conditions" />-->
+<!--    </group>-->
+
+<!--    <group-->
+<!--        android:checkableBehavior="single"-->
+<!--        android:id="@+id/group8">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_send"-->
+<!--            android:icon="@drawable/ic_drawer_share"-->
+<!--            android:title="@string/menu_share" />-->
+<!--    </group>-->
+<!--    <group android:checkableBehavior="single"-->
+<!--        android:id="@+id/group7">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_logout"-->
+<!--            android:icon="@drawable/ic_drawer_logout"-->
+<!--            android:title="@string/menu_logout" />-->
+<!--    </group>-->
+
+
+</menu>
